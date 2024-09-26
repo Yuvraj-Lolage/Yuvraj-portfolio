@@ -1,0 +1,39 @@
+#home{
+    padding-top: 140px;
+    height: 90vh;
+    background-color: rgba(255, 0, 0, 0.137);
+}
+
+#aboutme{
+    padding-top: 140px;
+    height: 90vh;
+    background-color: rgba(255, 217, 0, 0.137);
+}
+
+#services{
+    padding-top: 140px;
+    height: 90vh;
+    background-color: rgba(89, 255, 0, 0.137);
+}
+
+#projects{
+    padding-top: 140px;
+    height: 90vh;
+    background-color: rgba(0, 255, 225, 0.137);
+}
+
+#experience{
+    padding-top: 140px;
+    height: 90vh;
+    background-color: rgba(0, 60, 255, 0.137);
+}
+
+#contact{
+    padding-top: 140px;
+    height: 100vh;
+    background-color: rgba(255, 0, 230, 0.137);
+}
+.center-text{
+    text-align: center;
+
+}
