@@ -1,42 +1,59 @@
 @font-face {
-    font-family: 'animationFont';
-    src: url('../assets/fonts/MicrosoftTaiLeBold.ttf');
+  font-family: 'animationFont';
+  src: url('../assets/fonts/MicrosoftTaiLeBold.ttf');
 }
 
 @keyframes slideDown {
-    0% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-    25% {
-      opacity: 0; /* Start fading out earlier */
-      transform: translateY(10px); /* Move down slightly */
-    }
-    50% {
-      opacity: 0; /* Keep fully transparent */
-      transform: translateY(20px); /* Move down further */
-    }
-    75% {
-      opacity: 1; /* Start fading back in */
-      transform: translateY(10px); /* Move up slightly */
-    }
-    100% {
-      opacity: 1; /* Fully visible */
-      transform: translateY(0); /* Back to original position */
-    }
+  0% {
+    transform: translateY(0);
+    opacity: 1;
   }
-  
-  .animated-text {
-    font-family: 'animationFont';
-    display: flex;
-    justify-content: center;
-    font-size: 110px;
-    font-weight: bolder;
-    align-items: center;
-    animation: slideDown 1s ease-in-out forwards;
-    background: linear-gradient(180deg, #0A0A0A, #F2F1F1); /* Linear gradient colors */
-    -webkit-background-clip:text; /* Clip background to text */
-    -webkit-text-fill-color: transparent; /* Make text color transparent */
-    text-fill-color: transparent;  /* Add 'forwards' to maintain final state */
+
+  25% {
+    opacity: 0;
+    /* Start fading out earlier */
+    transform: translateY(10px);
+    /* Move down slightly */
   }
-  
+
+  50% {
+    opacity: 0;
+    /* Keep fully transparent */
+    transform: translateY(20px);
+    /* Move down further */
+  }
+
+  75% {
+    opacity: 1;
+    /* Start fading back in */
+    transform: translateY(10px);
+    /* Move up slightly */
+  }
+
+  100% {
+    opacity: 1;
+    /* Fully visible */
+    transform: translateY(0);
+    /* Back to original position */
+  }
+}
+
+
+
+.animated-text {
+  font-family: 'animationFont';
+  display: flex;
+  justify-content: center;
+  font-size: 110px;
+  font-weight: bolder;
+  align-items: center;
+  animation: slideDown 1.5s ease-in-out forwards;
+  background: linear-gradient(180deg, #0A0A0A, #F2F1F1);
+  /* Linear gradient colors */
+  -webkit-background-clip: text;
+  /* Clip background to text */
+  -webkit-text-fill-color: transparent;
+  /* Make text color transparent */
+  text-fill-color: transparent;
+  /* Add 'forwards' to maintain final state */
+}
