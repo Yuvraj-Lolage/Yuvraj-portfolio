@@ -1,0 +1,16 @@
+#sub-title-text{
+    color: gray;
+    font-size: 30px;
+}
+
+#title-text{
+    font-size: 55px;
+    font-weight: bold;
+    margin-top: -5px;
+}
+
+#aboutus-desc p{
+    font-size: 28px;
+    padding: 7px 0 7px 0;
+    text-justify:inter-word;
+}

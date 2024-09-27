@@ -1,0 +1,33 @@
+.services-section{
+    margin: 0 110px 0 110px;
+    padding-top: 50px;
+}
+
+.services-section #sub-title-text{
+    color: white;
+    font-size: 30px;
+}
+
+.services-section #title-text{
+    color: white;
+    font-size: 55px;
+    font-weight: bold;
+    margin-top: -5px;
+}
+
+#card-deck{
+    height: 500px;
+    /* background-color: rgba(255, 255, 255, 0.394); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#card-deck .card{
+    min-height: 376px;
+    min-width: 376px;
+    border-radius: 30px;
+    display: grid;
+    place-items: center;
+    font-size: larger;
+}

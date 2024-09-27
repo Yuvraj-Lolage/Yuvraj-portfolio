@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'animationFont';
-  src: url('../assets/fonts/MicrosoftTaiLeBold.ttf');
+  src: url('../../assets/fonts/MicrosoftTaiLeBold.ttf');
 }
 
 @keyframes slideDown {

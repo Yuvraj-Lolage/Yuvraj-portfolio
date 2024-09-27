@@ -3,7 +3,10 @@ import { Link } from 'react-scroll';
 import '../Homepage/portfolio_page.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import TextAnimation from '../../components/textAnimation';
+import TextAnimation from '../../components/TextAnimation/textAnimation';
+import AboutUs from '../../components/AboutUs/aboutus';
+import Services from '../../components/ProfessionalServices/services';
+import { Projects } from '../../components/WorkShowcase/projects';
 const Homepage = () => {
     return (<>
 
@@ -26,13 +29,13 @@ const Homepage = () => {
 
         </section>
         <section id="aboutme">
-            <h1 className='subtitle-text'>Who I am</h1>
+            <AboutUs/>
         </section>
         <section id="services">
-            <h1 className='center-text'>Services</h1>
+            <Services/>
         </section>
         <section id="projects">
-            <h1 className='center-text'>Projects</h1>
+            <Projects/>
         </section>
         <section id="experience">
             <h1 className='center-text'>experience</h1>

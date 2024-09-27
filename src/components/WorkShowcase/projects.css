@@ -1,0 +1,11 @@
+.projects-section #sub-title-text{
+    color: gray;
+    font-size: 30px;
+}
+
+.projects-section #title-text{
+    color: black;
+    font-size: 55px;
+    font-weight: bold;
+    margin-top: -5px;
+}
