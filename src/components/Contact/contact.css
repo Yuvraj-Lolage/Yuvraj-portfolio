@@ -22,7 +22,7 @@
     color: white;
     font-size: 28px;
     font-weight: bolder;
-    margin-right: 200px;
+    margin-right: 60;
 }
 
 .contact-section .contact-information .contact-details #email{
@@ -30,6 +30,11 @@
     font-size: 28px;
     font-weight: bolder;
 }
+
+.contact-section .contact-information .contact-details #mobile:hover, .contact-section .contact-information .contact-details #email:hover{
+    text-decoration: underline;
+    cursor: pointer;
+} 
 
 .contact-section .contact-avatar{
     width: 50%;

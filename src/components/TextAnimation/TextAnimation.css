@@ -41,6 +41,7 @@
 
 
 .animated-text {
+  letter-spacing: 7px;
   font-family: 'animationFont';
   display: flex;
   justify-content: center;

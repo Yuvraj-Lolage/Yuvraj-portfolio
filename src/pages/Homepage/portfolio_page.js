@@ -73,6 +73,7 @@ const Homepage = () => {
                 className="progress-bar"
                 style={{ scaleX: scrollYProgress }}
             />
+            <section className='h-auto'>
             <section id="home">
                 <h1 className='mt-5 name-text'>Hi, I am Yuvraj.</h1>
                 <div>
@@ -106,7 +107,7 @@ const Homepage = () => {
             <section id="contact">
                 <Contact />
             </section>
-
+        </section>
         </>
     );
 };
