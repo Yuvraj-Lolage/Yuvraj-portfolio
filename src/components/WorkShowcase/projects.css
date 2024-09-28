@@ -9,3 +9,66 @@
     font-weight: bold;
     margin-top: -5px;
 }
+
+.project-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-tiles .project-row .project{
+    width: 50%;
+    margin: 0 10px 0 10px;
+}
+
+.project-tiles .project-row .project .card{
+    position: relative;
+}
+
+.project-tiles .project-row .project .floating-button{
+    width: 70px;
+    height: 70px;
+    background-color: rgba(30, 30, 30, 1);
+    border-radius: 50px;
+    position: absolute;
+    display: grid;
+    place-items: center;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0px 3px 5px 1px rgba(55, 55, 55, 0.48) !important;
+}
+
+.project-tiles .project-row .project .floating-button .floating-icon{
+    padding: 2px;
+    width: 20px;
+}
+
+.project-tiles .project-row{
+    margin-top: -20px;
+}
+
+.project-img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.project-row .project:last-child{
+    margin-top: 100px;
+}
+
+.project-tiles .project-row .project #project-title{
+    font-size: 25px;
+    font-weight: bolder;
+} 
+
+/* Style for the button text */
+.custom-btn .btn-text {
+    font-size: 20px;
+  }
+  
+  /* Style for the icon inside the button */
+  .custom-btn .btn-icon img {
+    width: 30px;
+    margin-top: -8px; /* Adds space between the text and the icon */
+  }
+  

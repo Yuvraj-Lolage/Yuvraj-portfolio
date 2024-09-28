@@ -7,6 +7,7 @@ import TextAnimation from '../../components/TextAnimation/textAnimation';
 import AboutUs from '../../components/AboutUs/aboutus';
 import Services from '../../components/ProfessionalServices/services';
 import { Projects } from '../../components/WorkShowcase/projects';
+import { Contact } from '../../components/Contact/contact';
 const Homepage = () => {
     return (<>
 
@@ -37,11 +38,11 @@ const Homepage = () => {
         <section id="projects">
             <Projects/>
         </section>
-        <section id="experience">
+        {/* <section id="experience">
             <h1 className='center-text'>experience</h1>
-        </section>
+        </section> */}
         <section id="contact">
-            <h1 className='center-text'>Under developement</h1>
+            <Contact/>
         </section>
     </>);
 }

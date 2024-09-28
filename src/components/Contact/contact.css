@@ -1,0 +1,55 @@
+.contact-section{
+    margin: 0px 110px 0 110px;
+    display: flex;
+}
+
+.contact-section .contact-information{
+    width: 50%;
+}
+
+.contact-section .contact-information #title-text{
+   color: white !important;
+}
+
+.contact-section .contact-information #collaboration-desc{
+    padding: 150px 0 150px 0;
+    font-size: 25px;
+    color: white !important;
+
+}
+
+.contact-section .contact-information .contact-details #mobile{
+    color: white;
+    font-size: 28px;
+    font-weight: bolder;
+    margin-right: 200px;
+}
+
+.contact-section .contact-information .contact-details #email{
+    color: white;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.contact-section .contact-avatar{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-section .contact-avatar .img-fluid{
+    width: 450px;
+}
+
+.contact-section .contact-information .contact-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
