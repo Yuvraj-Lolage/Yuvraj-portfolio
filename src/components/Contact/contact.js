@@ -18,8 +18,8 @@ export const Contact = () => {
                     <p id="collaboration-desc">Feel free to contact me for any questions, collaboration, conversation, or simply to say hello! Thank you so much for stopping by and visiting my site.</p>
 
                     <section className='contact-details'>
-                        <span id='email'>yuvilolage7@gmail.com</span>
-                        <span id='mobile'>+91 9284489739</span>
+                        <span id='email' onClick={ () => window.open(process.env.REACT_APP_EMAIL_URL, '_blank') }>yuvilolage7@gmail.com</span>
+                        <span id='mobile' onClick={ ()=> window.open(process.env.REACT_APP_WHATSAPP_URL,'_blank') } >+91 9284489739</span>
                     </section>
                 </section>
                 <section className='contact-avatar'>
@@ -27,13 +27,13 @@ export const Contact = () => {
                 </section>
             </section>
             <section className='d-flex justify-content-center align-items-center mt-5'>
-                <button type="button" class="btn btn-light" onClick={() => window.open('https://github.com/Yuvraj-Lolage', '_blank')}>
+                <button type="button" class="btn btn-light" onClick={() => window.open(process.env.REACT_APP_GITHUB_URL, '_blank')}>
                     <section className='button-text'>
                         <img width={50} src={githubIcon} alt="Button Image" />
                         <span class="fs-4 ms-3">GitHub</span>
                     </section>
                 </button>
-                <button type="button" class="btn btn-light" onClick={() => window.open('https://www.linkedin.com/in/yuvraj-lolage-4349b8269/', '_blank')}>
+                <button type="button" class="btn btn-light" onClick={() => window.open(process.env.REACT_APP_LINKEDIN_URL, '_blank')}>
                     <section className='button-text'>
                         <img width={50} src={linkedInIcon} alt="Button Image" />
                         <span class="fs-4 ms-3">LinkedIn</span>
