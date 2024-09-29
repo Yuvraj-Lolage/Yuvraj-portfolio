@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 import '../WorkShowcase/projects.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
@@ -57,13 +58,13 @@ export const Projects = () => {
                     </section>
                 </section>
 
-                <section className='text-center mt-3'>
-                <button className='btn btn-dark custom-btn'>
-                    <span className='btn-text'>Show</span>
-                    <span className='btn-icon'>
-                        <img src={arrowRight} alt="Arrow Right" />
-                    </span>
-                </button>
+                <section className='text-center mt-3 button-section'>
+                    <Link to="/allprojects" className='btn btn-dark custom-btn'>
+                        <span className='btn-text'>Show more </span>
+                        <span className='btn-icon'>
+                            <img src={arrowRight} alt="Arrow Right" />
+                        </span>
+                    </Link>
                 </section>
             </section>
         </>

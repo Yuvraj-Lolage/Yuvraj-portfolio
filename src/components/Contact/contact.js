@@ -27,13 +27,13 @@ export const Contact = () => {
                 </section>
             </section>
             <section className='d-flex justify-content-center align-items-center mt-5'>
-                <button type="button" class="btn btn-light">
+                <button type="button" class="btn btn-light" onClick={() => window.open('https://github.com/Yuvraj-Lolage', '_blank')}>
                     <section className='button-text'>
                         <img width={50} src={githubIcon} alt="Button Image" />
                         <span class="fs-4 ms-3">GitHub</span>
                     </section>
                 </button>
-                <button type="button" class="btn btn-light">
+                <button type="button" class="btn btn-light" onClick={() => window.open('https://www.linkedin.com/in/yuvraj-lolage-4349b8269/', '_blank')}>
                     <section className='button-text'>
                         <img width={50} src={linkedInIcon} alt="Button Image" />
                         <span class="fs-4 ms-3">LinkedIn</span>

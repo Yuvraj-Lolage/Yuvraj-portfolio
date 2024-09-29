@@ -62,6 +62,7 @@ import Services from '../../components/ProfessionalServices/services';
 import { Projects } from '../../components/WorkShowcase/projects';
 import { Contact } from '../../components/Contact/contact';
 import { motion, useScroll } from 'framer-motion';
+import Navbar from '../Navbar/navbar';
 
 const Homepage = () => {
     const { scrollYProgress } = useScroll();
@@ -72,7 +73,8 @@ const Homepage = () => {
             <motion.div
                 className="progress-bar"
                 style={{ scaleX: scrollYProgress }}
-            />
+                />
+                <Navbar/>
             <section className='h-auto'>
             <section id="home">
                 <h1 className='mt-5 name-text'>Hi, I am Yuvraj.</h1>

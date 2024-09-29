@@ -1,3 +1,15 @@
+.allprojects-section{
+    padding-top: 50px;
+    margin: 0 110px 0 110px;
+}
+
+.allprojects-section .project-tiles{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+}
+
 .projects-section #sub-title-text{
     color: gray;
     font-size: 30px;
@@ -11,17 +23,16 @@
 }
 
 .project-row{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
 }
 
 .project-tiles .project-row .project{
-    width: 50%;
-    margin: 0 10px 0 10px;
+    width: 550px;
+    margin: 20px 0px 60px 0px;
 }
 
 .project-tiles .project-row .project .card{
+    width: 100%;
     position: relative;
 }
 
@@ -43,17 +54,9 @@
     width: 20px;
 }
 
-.project-tiles .project-row{
-    margin-top: -20px;
-}
-
 .project-img{
     width: 100%;
     object-fit: contain;
-}
-
-.project-row .project:last-child{
-    margin-top: 100px;
 }
 
 .project-tiles .project-row .project #project-title{
@@ -61,23 +64,14 @@
     font-weight: bolder;
 } 
 
-.custom-btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 /* Style for the button text */
 .custom-btn .btn-text {
     font-size: 20px;
   }
-.button-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+  
   /* Style for the icon inside the button */
   .custom-btn .btn-icon img {
     width: 30px;
-    margin-top: 2px !important; /* Adds space between the text and the icon */
+    margin-top: -8px; /* Adds space between the text and the icon */
   }
   
