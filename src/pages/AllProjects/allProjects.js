@@ -13,11 +13,7 @@ const AllProjects = () => {
 
     const token = process.env.REACT_APP_JWT_AUTHORIZATION_TOKEN;
     useEffect(() => {
-        axios.get('https://yuvraj-lolage-portfolio-backend-f28wh7kb5.vercel.app/',{
-            headers: {
-                Authorization: `Bearer ${token}` // Send the token in the Authorization header
-              }
-        })
+        axios.get('http://localhost:5000')
             .then(response => {
                 setData(response.data);
                 console.log(response.data);
