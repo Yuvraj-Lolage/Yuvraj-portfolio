@@ -58,3 +58,42 @@
     justify-content: center;
     align-items: center;
 }
+
+.social-platforms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Large desktops and monitors (1280px and above) */
+@media (min-width: 1280px) {}
+
+/* Laptops and larger tablets (769px to 1279px) */
+@media (min-width: 769px) and (max-width: 1279px) {
+    .contact-section{
+        margin: 0px 60px 0 60px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .contact-section .contact-avatar .img-fluid{
+        width: 300px;
+        
+    }
+    .contact-section .contact-information{
+        width: 100%;
+    }
+
+    .contact-section .contact-avatar{
+        width: 100%;
+        margin: 0px 0 50px 0;
+    }
+
+
+}
+
+/* Tablets and larger smartphones (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {}
+
+/* Small smartphones (0px to 480px) */
+@media (max-width: 480px) {}

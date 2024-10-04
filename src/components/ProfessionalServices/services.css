@@ -26,12 +26,50 @@
     align-items: center;
 }
 
-#card-deck .card{
-    width: 280px;
-    height:280px;
+.services-section .row .col-lg .card{
+    height:300px;
     border-radius: 30px;
     display: grid;
     place-items: center;
     text-align: center;
     font-size: larger;
 }
+
+/* Large desktops and monitors (1280px and above) */
+@media (min-width: 1280px) {}
+
+/* Laptops and larger tablets (769px to 1279px) */
+@media (min-width: 769px) and (max-width: 1279px) {
+    .services-section{
+        margin: 0 60px 0 60px;
+        padding-top: 50px;
+    }
+
+    .services-section #sub-title-text{
+        color: white;
+        font-size: 28px;
+    }
+    
+    .services-section #title-text{
+        color: white;
+        font-size: 45px;
+        font-weight: bold;
+        margin-top: -5px;
+    }
+
+    .services-section .row .col-lg .card{
+        min-width: 300px !important;
+        height:300px;
+        border-radius: 30px;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        font-size: larger;
+    }
+}
+
+/* Tablets and larger smartphones (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {}
+
+/* Small smartphones (0px to 480px) */
+@media (max-width: 480px) {}

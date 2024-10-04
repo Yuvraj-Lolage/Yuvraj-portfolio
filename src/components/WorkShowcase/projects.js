@@ -11,53 +11,55 @@ import arrowRight from '../../assets/images/arrow-right.png';
 export const Projects = () => {
     return (
         <>
-            <section className="projects-section">
+            <div>
                 <span id="sub-title-text">Work Showcase</span>
                 <h1 id="title-text">Featured Designs & Developments</h1>
-
-                <section className='project-tiles'>
-                    <section className='project-row'>
-                        <div className='project'>
-                            <div class="card m-1">
-                                <button className="floating-button"><img className='floating-icon' src={floatingButtonIcon} /></button>
+                <div className='row'>
+                    <div className='col-lg-6'>
+                        <div class="card my-4">
+                            <div class="card-body">
+                                <button className="floating-button"><img className=' img-fluid floating-icon' src={floatingButtonIcon} /></button>
                                 <div class="card-body">
-                                    <img className='project-img' src={techonsyProject} />
+                                    <img className='project-img shadow-lg' src={techonsyProject} />
                                 </div>
+                                <span id='project-title'>Techonsy LMS web portal</span>
                             </div>
-                            <span id='project-title'>Techonsy LMS web portal</span>
                         </div>
-                        <div className='project'>
-                            <div class="card m-1">
-                                <button className="floating-button"><img className='floating-icon' src={floatingButtonIcon} /></button>
+                    </div>
+                    <div className='col-lg-6'>
+                        <div class="card my-4">
+                            <div class="card-body">
+                                <button className="floating-button"><img className=' img-fluid floating-icon' src={floatingButtonIcon} /></button>
                                 <div class="card-body">
-                                    <img className='project-img' src={ewasteProject} />
+                                    <img className='project-img shadow-lg' src={ewasteProject} />
                                 </div>
+                                <span id='project-title'>E-waste Management System</span>
                             </div>
-                            <span id='project-title'>E-waste management system</span>
                         </div>
-                    </section>
-                    <section className='project-row'>
-                        <div className='project'>
-                            <div class="card m-1">
-                                <button className="floating-button"><img className='floating-icon' src={floatingButtonIcon} /></button>
+                    </div>
+                    <div className='col-lg-6'>
+                        <div class="card my-4">
+                            <div class="card-body">
+                                <button className="floating-button"><img className=' img-fluid floating-icon' src={floatingButtonIcon} /></button>
                                 <div class="card-body">
-                                    <img className='project-img' src={techonsyProject} />
+                                    <img className='project-img shadow-lg' src={techonsyProject} />
                                 </div>
+                                <span id='project-title'>Techonsy LMS web portal</span>
                             </div>
-                            <span id='project-title'>Techonsy LMS web portal</span>
                         </div>
-                        <div className='project'>
-                            <div class="card m-1">
+                    </div>
+                    <div className='col-lg-6'>
+                        <div class="card my-4">
+                            <div class="card-body">
+                                <button className="floating-button"><img className=' img-fluid floating-icon' src={floatingButtonIcon} /></button>
                                 <div class="card-body">
-                                    <button className="floating-button"><img className='floating-icon' src={floatingButtonIcon} /></button>
-                                    <img className='project-img' src={ewasteProject} />
+                                    <img className='project-img shadow-lg' src={ewasteProject} />
                                 </div>
+                                <span id='project-title'>E-waste Management System</span>
                             </div>
-                            <span id='project-title'>E-waste management system</span>
                         </div>
-                    </section>
-                </section>
-
+                    </div>
+                </div>
                 <section className='text-center mt-3 button-section'>
                     <Link to="/allprojects" className='btn btn-dark custom-btn'>
                         <span className='btn-text'>Show more </span>
@@ -66,7 +68,7 @@ export const Projects = () => {
                         </span>
                     </Link>
                 </section>
-            </section>
+            </div>
         </>
     );
 }

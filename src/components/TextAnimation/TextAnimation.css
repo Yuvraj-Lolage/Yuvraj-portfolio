@@ -58,3 +58,20 @@
   text-fill-color: transparent;
   /* Add 'forwards' to maintain final state */
 }
+
+/* Large desktops and monitors (1280px and above) */
+@media (min-width: 1280px) {}
+
+/* Laptops and larger tablets (769px to 1279px) */
+@media (min-width: 769px) and (max-width: 1279px) {
+  .animated-text{
+    letter-spacing: 5px;
+    font-size: 80px;
+  }
+}
+
+/* Tablets and larger smartphones (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {}
+
+/* Small smartphones (0px to 480px) */
+@media (max-width: 480px) {}

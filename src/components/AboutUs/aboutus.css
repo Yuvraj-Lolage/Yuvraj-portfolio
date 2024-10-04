@@ -14,3 +14,26 @@
     padding: 7px 0 7px 0;
     text-justify:inter-word;
 }
+
+/* Large desktops and monitors (1280px and above) */
+@media (min-width: 1280px) {}
+
+/* Laptops and larger tablets (769px to 1279px) */
+@media (min-width: 769px) and (max-width: 1279px) {
+    #title-text{
+        font-size: 45px;
+        font-weight: bold;
+        margin-top: -5px;
+    }
+    #aboutus-desc p{
+        font-size: 22px;
+        padding: 7px 0 7px 0;
+        text-justify:inter-word;
+    }
+}
+
+/* Tablets and larger smartphones (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {}
+
+/* Small smartphones (0px to 480px) */
+@media (max-width: 480px) {}

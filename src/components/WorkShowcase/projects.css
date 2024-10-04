@@ -1,33 +1,33 @@
-.projects-section #sub-title-text{
+.projects-section #sub-title-text {
     color: gray;
     font-size: 30px;
 }
 
-.projects-section #title-text{
+.projects-section #title-text {
     color: black;
     font-size: 55px;
     font-weight: bold;
     margin-top: -5px;
 }
 
-.project-row{
+.project-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.project-tiles .project-row .project{
+.project-tiles .project-row .project {
     width: 50%;
     margin: 0 10px 0 10px;
 }
 
-.project-tiles .project-row .project .card{
+.project-tiles .project-row .project .card {
     position: relative;
 }
 
-.project-tiles .project-row .project .floating-button{
-    width: 70px;
-    height: 70px;
+.floating-button {
+    width: 60px;
+    height: 60px;
     background-color: rgba(30, 30, 30, 1);
     border-radius: 50px;
     position: absolute;
@@ -36,48 +36,85 @@
     bottom: 20px;
     right: 20px;
     box-shadow: 0px 3px 5px 1px rgba(55, 55, 55, 0.48) !important;
+    opacity: 0;
+    transition: 500ms ease;
 }
 
-.project-tiles .project-row .project .floating-button .floating-icon{
+.floating-button .floating-icon {
     padding: 2px;
     width: 20px;
 }
 
-.project-tiles .project-row{
+.card:hover {
+    .floating-button {
+        opacity: 1;
+    }
+}
+
+.project-tiles .project-row {
     margin-top: -20px;
 }
 
-.project-img{
+.project-img {
     width: 100%;
     object-fit: contain;
 }
 
-.project-row .project:last-child{
+.project-row .project:last-child {
     margin-top: 100px;
 }
 
-.project-tiles .project-row .project #project-title{
+.card #project-title {
     font-size: 25px;
     font-weight: bolder;
-} 
+    padding-left: 15px;
+}
 
-.custom-btn{
+.custom-btn {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 /* Style for the button text */
 .custom-btn .btn-text {
     font-size: 20px;
-  }
-.button-section{
+}
+
+.button-section {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-  /* Style for the icon inside the button */
-  .custom-btn .btn-icon img {
+
+/* Style for the icon inside the button */
+.custom-btn .btn-icon img {
     width: 30px;
-    margin-top: 2px !important; /* Adds space between the text and the icon */
-  }
-  
+    margin-top: 2px !important;
+    /* Adds space between the text and the icon */
+}
+
+
+/* Large desktops and monitors (1280px and above) */
+@media (min-width: 1280px) {}
+
+/* Laptops and larger tablets (769px to 1279px) */
+@media (min-width: 769px) and (max-width: 1279px) {
+    .projects-section #sub-title-text {
+        color: gray;
+        font-size: 28px;
+    }
+    
+    .projects-section #title-text {
+        color: black;
+        font-size: 45px;
+        font-weight: bold;
+        margin-top: -5px;
+    }
+}
+
+/* Tablets and larger smartphones (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {}
+
+/* Small smartphones (0px to 480px) */
+@media (max-width: 480px) {}
