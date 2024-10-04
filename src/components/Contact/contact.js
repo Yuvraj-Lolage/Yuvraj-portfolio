@@ -27,19 +27,19 @@ export const Contact = () => {
                 </section>
             </section>
             <section className='social-platforms'>
-                <button type="button" class="btn btn-light" onClick={() => window.open(process.env.REACT_APP_GITHUB_URL, '_blank')}>
+                <button type="button" class="btn btn-light social-link" onClick={() => window.open(process.env.REACT_APP_GITHUB_URL, '_blank')}>
                     <section className='button-text'>
                         <img width={50} src={githubIcon} alt="Button Image" />
                         <span class="fs-4 ms-3">GitHub</span>
                     </section>
                 </button>
-                <button type="button" class="btn btn-light" onClick={() => window.open(process.env.REACT_APP_LINKEDIN_URL, '_blank')}>
+                <button type="button" class="btn btn-light social-link" onClick={() => window.open(process.env.REACT_APP_LINKEDIN_URL, '_blank')}>
                     <section className='button-text'>
                         <img width={50} src={linkedInIcon} alt="Button Image" />
                         <span class="fs-4 ms-3">LinkedIn</span>
                     </section>
                 </button>
-                <button type="button" class="btn btn-light">
+                <button type="button" class="btn btn-light social-link">
                     <section className='button-text'>
                         <img width={50} src={figmaIcon} alt="Button Image" />
                         <span class="fs-4 ms-3">Figma</span>

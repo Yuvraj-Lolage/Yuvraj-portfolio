@@ -33,7 +33,39 @@
 }
 
 /* Tablets and larger smartphones (481px to 768px) */
-@media (min-width: 481px) and (max-width: 768px) {}
+@media (min-width: 481px) and (max-width: 768px) {
+    #title-text{
+        font-size: 32px;
+        font-weight: bold;
+        margin-top: -5px;
+    }
+
+    #sub-title-text{
+        color: gray;
+        font-size: 22px;
+    }
+    #aboutus-desc p{
+        font-size: 20px;
+        padding: 7px 0 7px 0;
+        text-justify:inter-word;
+    }
+}
 
 /* Small smartphones (0px to 480px) */
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    #title-text{
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: -5px;
+    }
+
+    #sub-title-text{
+        color: gray;
+        font-size: 22px;
+    }
+    #aboutus-desc p{
+        font-size: 17px;
+        padding: 7px 0 7px 0;
+        text-justify:inter-word;
+    }
+}

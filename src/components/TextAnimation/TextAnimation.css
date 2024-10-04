@@ -71,7 +71,17 @@
 }
 
 /* Tablets and larger smartphones (481px to 768px) */
-@media (min-width: 481px) and (max-width: 768px) {}
+@media (min-width: 481px) and (max-width: 768px) {
+  .animated-text{
+    letter-spacing: 0px;
+    font-size: 60px;
+  }
+}
 
 /* Small smartphones (0px to 480px) */
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+  .animated-text{
+    letter-spacing: 0px;
+    font-size: 40px;
+  }
+}

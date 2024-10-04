@@ -1,11 +1,16 @@
-.my-custom-navbar{
+.my-custom-navbar {
     width: 58% !important;
-    margin: 0 auto !important;    
-    background-color: #000 !important; /* Custom background color */
-    border-radius: 50px !important;       /* Custom border-radius */
-    padding: 15px !important;             /* Adjust padding */
-    border: 1px solid #b2ebf2 !important; /* Optional: Custom border */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1) !important; /* Optional: Adding shadow */
+    margin: 0 auto !important;
+    background-color: #000 !important;
+    /* Custom background color */
+    border-radius: 50px !important;
+    /* Custom border-radius */
+    padding: 15px !important;
+    /* Adjust padding */
+    border: 1px solid #b2ebf2 !important;
+    /* Optional: Custom border */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1) !important;
+    /* Optional: Adding shadow */
     margin-top: 20px !important;
     display: flex;
     justify-content: space-between;
@@ -13,16 +18,17 @@
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 1000; /* Ensures it stays on top of other elements */
+    z-index: 1000;
+    /* Ensures it stays on top of other elements */
 }
 
-.nav-link{
+.nav-link {
     color: #fff;
     font-size: 20px !important;
 }
 
 
-.my-custom-navbar li:last-child{
+.my-custom-navbar li:last-child {
     /* background-color: #ff5722 !important; */
     margin-right: 20px;
 }
@@ -31,27 +37,57 @@
     margin-left: 20px;
     /* background-color: #ff5722 !important; Custom background color for the first tab */
 }
+
 .nav-link.active {
     border-radius: 50px;
     padding: 16px 40px 16px 40px;
     font-weight: bold;
     background-color: rgba(209, 209, 209, 0.19) !important;
-  }
+}
 
-.nav-link.active:hover{
+.nav-link.active:hover {
     text-decoration: none;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     text-decoration: underline;
     color: #fff;
 }
 
-@media (max-width: 1200px) {
-    .my-custom-navbar{
+
+/* Large desktops and monitors (1280px and above) */
+@media (min-width: 1280px) {}
+
+/* Laptops and larger tablets (769px to 1279px) */
+@media (min-width: 769px) and (max-width: 1279px) {
+    .my-custom-navbar {
         margin-top: 0px !important;
         border-radius: 0px !important;
         width: 100% !important;
-      background-color: #000 !important;
+        background-color: #000 !important;
     }
-  }
+}
+
+/* Tablets and larger smartphones (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .my-custom-navbar {
+        /* display: flex !important;
+        flex-direction: column !important; */
+        margin-top: 0px !important;
+        border-radius: 0px !important;
+        width: 100% !important;
+        background-color: #000 !important;
+    }
+}
+
+/* Small smartphones (0px to 480px) */
+@media (max-width: 480px) {
+    .my-custom-navbar {
+        /* display: flex !important;
+        flex-direction: column !important; */
+        margin-top: 0px !important;
+        border-radius: 0px !important;
+        width: 100% !important;
+        background-color: #000 !important;
+    }
+}

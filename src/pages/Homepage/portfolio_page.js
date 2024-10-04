@@ -23,7 +23,7 @@ const Homepage = () => {
                 <Navbar/>
             <section className='h-auto'>
             <section id="home">
-                <h1 className='mt-5 name-text'>Hi, I am Yuvraj.</h1>
+                <h1 className='name-text'>Hi, I am Yuvraj.</h1>
                 <div>
                     <TextAnimation />
                 </div>

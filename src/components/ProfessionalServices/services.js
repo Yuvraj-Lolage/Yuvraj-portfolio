@@ -11,28 +11,28 @@ const Services = () => {
 
             <section>
             <div className='row'>
-                    <div className='col-lg mx-2'>
+                    <div className='col-lg'>
                         <div class="card my-3">
                             <div class="card-body">
                                 This is some text within a card body.
                             </div>
                         </div>
                     </div>
-                    <div className='col-lg mx-2'>
+                    <div className='col-lg'>
                         <div class="card my-3">
                             <div class="card-body">
                                 This is some text within a card body.
                             </div>
                         </div>
                     </div>
-                    <div className='col-lg mx-2'>
-                        <div class="card my-3">
+                    <div className='col-lg'>
+                        <div class="card">
                             <div class="card-body">
                                 This is some text within a card body.
                             </div>
                         </div>
                     </div>
-                    <div className='col-lg mx-2'>
+                    <div className='col-lg'>
                         <div class="card my-3">
                             <div class="card-body">
                                 This is some text within a card body.
