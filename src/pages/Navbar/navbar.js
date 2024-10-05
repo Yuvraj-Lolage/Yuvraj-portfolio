@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "../Navbar/navbar.css";
+import Hamburger from "../../components/Hamburger/hamburger";
 
 const Navbar = () => {
- 
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
+  const toggleHamburge = () => {
+    setHamburgerOpen(!hamburgerOpen);
+    console.log(hamburgerOpen);
+    
+  };
   return (
     <>
       <ul className="nav my-custom-navbar">
@@ -88,6 +94,26 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
+      <div className="hamburger-background">
+        <h4>Yuvraj Lolage</h4>
+      </div>
+      <div className="hamburger" onClick={ toggleHamburge }>
+        <Hamburger isOpen={ hamburgerOpen }/>
+      </div>
+      <style jsx="true">{`
+
+        
+
+        ul {
+          z-index: ${hamburgerOpen ? '11' : '0'} !important;
+          display: ${hamburgerOpen ? 'flex' : ''} !important;
+          flex-direction: ${hamburgerOpen ? 'column' : ''} !important;
+          background-color: red;
+          width: 50vw;
+          margin-top: 50px;
+          position: absolute;
+        }
+      `}</style>
     </>
   );
 };
