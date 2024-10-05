@@ -259,7 +259,7 @@
 }
 
 /* Small smartphones (0px to 480px) */
-@media (max-width: 480px) {
+@media (min-width: 371px) and (max-width: 480px) {
     #home {
         padding-top: 1px;
     }
@@ -316,3 +316,62 @@
         box-shadow: 0px 3px 5px 1px rgba(55, 55, 55, 0.28) !important;
     }
 }
+
+@media (min-width: 320px) and  (max-width: 370px) {
+    #home {
+        padding-top: 1px;
+    }
+    .name-text{
+        font-size: 30px;
+        font-weight: 500;
+        margin: 100px 0 1px 0;
+    }
+
+    .based-text{
+        font-size: 30px;
+        font-weight: 500;
+        margin: -10px 0 1px 0;
+    }
+
+    .desc-text h4{
+        margin-top: -20px;
+        font-size: 14px !important;
+        width: 100%;
+    }
+
+    .btn-section{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .btn-dark {
+        height: 50px !important;
+        width: 60% !important;
+        margin: 0px 20px 10px 20px;
+        border-radius: 100px !important;
+        font-weight: 600 !important;
+        background-color: #000 !important;
+        box-shadow: 0px 3px 5px 1px rgba(55, 55, 55, 0.48) !important;
+    }
+    
+    .btn-light {
+        height: 50px !important;
+        width: 60% !important;
+        margin: 10px 20px 0px 20px;
+        border-radius: 100px !important;
+        border: 1px #000 solid !important;
+        font-weight: 600 !important;
+        box-shadow: 0px 3px 5px 1px rgba(55, 55, 55, 0.28) !important;
+    }
+    #aboutme {
+        padding: 50px 0 50px 0;
+        margin: 0 10px 0 10px;
+        height: max-content;
+    }
+    #projects {
+        padding: 50px 0 50px 0;
+        margin: 0px 10px 0 10px;
+        height: max-content;
+    }
+
+    
+  }

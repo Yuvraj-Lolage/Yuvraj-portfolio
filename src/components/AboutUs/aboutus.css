@@ -52,7 +52,7 @@
 }
 
 /* Small smartphones (0px to 480px) */
-@media (max-width: 480px) {
+@media (min-width: 371px) and (max-width: 480px) {
     #title-text{
         font-size: 30px;
         font-weight: bold;
@@ -69,3 +69,21 @@
         text-justify:inter-word;
     }
 }
+
+@media (min-width: 320px) and  (max-width: 370px) {
+    #title-text{
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: -5px;
+    }
+
+    #sub-title-text{
+        color: gray;
+        font-size: 22px;
+    }
+    #aboutus-desc p{
+        font-size: 17px;
+        padding: 7px 0 7px 0;
+        text-justify:inter-word;
+    }
+  }

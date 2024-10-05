@@ -122,7 +122,7 @@
 }
 
 /* Small smartphones (0px to 480px) */
-@media (max-width: 480px) {
+@media (min-width: 371px) and (max-width: 480px) {
     #sub-title-text {
         color: gray;
         font-size: 18px;
@@ -146,3 +146,28 @@
         width: 60% !important;
     }
 }
+
+@media (min-width: 320px) and  (max-width: 370px) {
+    #sub-title-text {
+        color: gray;
+        font-size: 18px;
+    }
+     #title-text {
+        color: black;
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: -5px;
+    }
+    
+    .card{
+        margin: 0 0 10px 0 !important;
+    }
+
+    .button-section{
+        margin: 10px 0 -20px 0 !important;
+    }
+
+    .custom-btn{
+        width: 60% !important;
+    }
+  }

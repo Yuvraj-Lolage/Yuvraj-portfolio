@@ -34,8 +34,8 @@ const Homepage = () => {
                 </section>
 
                 <section className='btn-section'>
-                    <button className='btn btn-dark'>Get in touch</button>
-                    <button className='btn btn-light'>Download Resume</button>
+                    <button className='btn btn-dark' onClick={() => window.open(process.env.REACT_APP_EMAIL_URL, '_blank')} >Get in touch</button>
+                    <button className='btn btn-light' onClick={() => window.open(process.env.REACT_APP_PORTFOLIO, '_blank')}>Download Resume</button>
                 </section>
 
 
