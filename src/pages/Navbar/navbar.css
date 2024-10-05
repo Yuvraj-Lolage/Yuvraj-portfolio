@@ -18,7 +18,7 @@
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 10;
+    z-index: 20 !important;
     /* Ensures it stays on top of other elements */
 }
 

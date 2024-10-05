@@ -57,6 +57,7 @@
   /* Make text color transparent */
   text-fill-color: transparent;
   /* Add 'forwards' to maintain final state */
+  z-index: 8;
 }
 
 /* Large desktops and monitors (1280px and above) */
