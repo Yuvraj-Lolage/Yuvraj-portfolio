@@ -5,6 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import techonsyProject from '../../assets/images/techonsy_project.png';
 import ewasteProject from '../../assets/images/Ewaste_project.png';
+import bookApplication from '../../assets/images/book_app.png';
+import bakingBarons from '../../assets/images/baking_barons.png';
 import floatingButtonIcon from '../../assets/images/floating_button_icon.png';
 import arrowRight from '../../assets/images/arrow-right.png';
 
@@ -42,9 +44,9 @@ export const Projects = () => {
                             <div class="card-body">
                                 <button className="floating-button"><img className=' img-fluid floating-icon' src={floatingButtonIcon} /></button>
                                 <div class="card-body">
-                                    <img className='project-img shadow-lg' src={techonsyProject} />
+                                    <img className='project-img shadow-lg' src={bakingBarons} />
                                 </div>
-                                <span id='project-title'>Techonsy LMS web portal</span>
+                                <span id='project-title'>T echonsy LMS web portal</span>
                             </div>
                         </div>
                     </div>
@@ -53,7 +55,7 @@ export const Projects = () => {
                             <div class="card-body">
                                 <button className="floating-button"><img className=' img-fluid floating-icon' src={floatingButtonIcon} /></button>
                                 <div class="card-body">
-                                    <img className='project-img shadow-lg' src={ewasteProject} />
+                                    <img className='project-img shadow-lg' src={bookApplication} />
                                 </div>
                                 <span id='project-title'>E-waste Management System</span>
                             </div>

@@ -1,37 +1,42 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import "../AllProjects/allProjects.css";
+import "./project_details.css";
 import floatingButtonIcon from '../../assets/images/floating_button_icon.png';
+import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
-const AllProjects = () => {
-    const [data, setData] = useState(null);
+const ProjectDetails = () => {
+    const { projectId } = useParams();
+    const [project, setProject] = useState();
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-
     useEffect(() => {
-        axios.get(`${ process.env.REACT_APP_BACKEND_ROOT_URL }`)
-            .then(response => {
-                setData(response.data);
-                console.log(response.data);
+        try {
+            axios.get(`${ process.env.REACT_APP_BACKEND_ROOT_URL }/getProject/${projectId}`)
+                .then((response) => {
+                    setProject(response.data);
+                    console.log(response.data);
+                    setLoading(false);
+                })
+        } catch (error) {
+            setError(error.message);
+            console.log(error);
+            setLoading(false);
+        }
 
-                setLoading(false);
-            })
-            .catch(err => {
-                setError(err.message);
-                console.log(err);
 
-                setLoading(false);
-            });
-    }, []);
+        console.log(`Project id = ${projectId}`);
+
+    }, [])
+
 
     const cardLayout = (item, index) => {
         return (
             <div className='col-lg-6'>
                 <div className="card my-4" key={index}> {/* key is added */}
                     <div className="card-body">
-                        <button className="floating-button" onClick={ ()=> window.open(`/project/${ item._id }`) }>
+                        <button className="floating-button">
                             <img className=' img-fluid floating-icon' src={floatingButtonIcon} alt="icon" />
                         </button>
                         <div className="card-body">
@@ -46,25 +51,19 @@ const AllProjects = () => {
         );
     }
 
-
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error: {error}</p>;
-
     return (
         <>
-            <section className="allprojects-section">
-                <span id="sub-title-text">Work Showcase</span>
-                <h1 id="title-text">Featured Designs & Developments</h1>
-
-                <div className='row'>
-
-                    {data.map((item, index) => {
-                        return cardLayout(item, index);
-                    })}
-                </div>
-            </section>
+            <h1 className='text-center'>Project Details</h1>
+            <div className='row'>
+                {project.map((item, index) => {
+                    return cardLayout(item, index);
+                })}
+            </div>
         </>
-    )
+    );
 }
 
-export default AllProjects;
+export default ProjectDetails;
+
