@@ -10,32 +10,32 @@ const Services = () => {
             <h1 id="title-text">WHAT CAN I DO FOR YOU?</h1>
 
             <section>
-            <div className='row'>
+                <div className='row'>
                     <div className='col-lg'>
                         <div class="card my-3">
                             <div class="card-body">
-                                This is some text within a card body.
+                                <h3>UI/UX Designing</h3>
                             </div>
                         </div>
                     </div>
                     <div className='col-lg'>
                         <div class="card my-3">
                             <div class="card-body">
-                                This is some text within a card body.
-                            </div>
-                        </div>
-                    </div>
-                    <div className='col-lg'>
-                        <div class="card">
-                            <div class="card-body">
-                                This is some text within a card body.
+                                <h3>Web Development</h3>
                             </div>
                         </div>
                     </div>
                     <div className='col-lg'>
                         <div class="card my-3">
                             <div class="card-body">
-                                This is some text within a card body.
+                                <h3>Mobile app Development</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='col-lg'>
+                        <div class="card my-3">
+                            <div class="card-body">
+                                <h3>Wireframing & Prototyping</h3>
                             </div>
                         </div>
                     </div>

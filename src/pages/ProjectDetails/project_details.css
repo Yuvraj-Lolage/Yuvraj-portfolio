@@ -1,0 +1,25 @@
+.project-details-section{
+    margin: 0 110px 0 110px;
+    height: max-content;
+}
+
+/* Large desktops and monitors (1280px and above) */
+@media (min-width: 1280px) {}
+
+/* Laptops and larger tablets (769px to 1279px) */
+@media (min-width: 769px) and (max-width: 1279px) {
+    
+}
+
+/* Tablets and larger smartphones (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+
+}
+
+/* Small smartphones (0px to 480px) */
+@media (min-width: 371px) and (max-width: 480px) {
+    
+}
+
+@media (min-width: 320px) and  (max-width: 370px) {
+  }
