@@ -1,6 +1,7 @@
 .services-section{
     margin: 0 110px 0 110px;
-    padding-top: 50px;
+    /* padding-top: 50px; */
+    padding: 100px 0 100px 0;
 }
 
 .services-section #sub-title-text{
